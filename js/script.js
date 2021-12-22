@@ -21,8 +21,14 @@ const listElement = document.getElementById('list-element');
 let listNumber = '';
 
 //** Ciclo for
-for(let i = 1; i <= 100; i++){
-    listNumber = listNumber + `${i} `;
+for(let i = 1; i <= 4; i++){
+    if(i % 3 === 0){
+        i = (`fizz `);
+        listNumber = listNumber + `${i} `;
+    }else{
+        listNumber = listNumber + `${i} `;
+    }
+    //** Ciclo if per vedere se il numero è divisibile per 3
 }
 
 console.log(listNumber);
