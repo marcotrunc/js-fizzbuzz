@@ -24,15 +24,19 @@ let listNumber = '';
 for(let i = 1; i <= 100; i++){
     //** Ciclo if per vedere se il numero è divisibile per 3
     if(i % 3 === 0){
-        listNumber = listNumber + `fizz `;
+        listNumber += `fizz `;
     
      //** Ciclo if per vedere se il numero è divisibile per 3
     }else if (i % 5 === 0){
-        listNumber = listNumber + `fizzBuzz `;
+        listNumber += `fizzBuzz `;
         
     }else{
-        listNumber = listNumber + `${i} `;
+        listNumber += `${i} `;
     }
 }
 
+//** Stampo l'elemento in console
 console.log(listNumber);
+
+//** Stampo l'elemento in pagina
+listElement.innerHTML = listNumber;
