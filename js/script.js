@@ -25,17 +25,20 @@ let listNumber = '';
 for(let i = 1; i <= 100; i++){
     //** Ciclo if per vedere se il numero è divisibile per 3
     if(i % 3 === 0 && i % 5 === 0){
-    listNumber += `fizzBuzz`
+    listNumber += `<li>
+                        <span class="red">Fizz</span>
+                        <span class="blue">Buzz</span>
+                    </li>`
     }
     else if(i % 3 === 0){
-        listNumber += `fizz `;
+        listNumber += `<li class="red">Fizz</li>`;
     
      //** Ciclo if per vedere se il numero è divisibile per 3
     }else if (i % 5 === 0){
-        listNumber += `buzz `;
+        listNumber += `<li class="blue">Buzz</li>`;
         
     }else{
-    listNumber += `${i} `;
+    listNumber += `<li>${i}</li> `;
     }
 }
 
