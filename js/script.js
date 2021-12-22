@@ -1,3 +1,4 @@
+console.log('JS OK!')
 /*
 Scrivi un programma che stampi i numeri da 1 a 100,
 ma per i multipli di 3 stampi Fizz al posto del numero e per i multipli di 5 stampi Buzz.
@@ -17,4 +18,11 @@ Provare a stampare la lista in pagina invece che in console.
 const listElement = document.getElementById('list-element');
 
 //** Dichiaro una variabile di appoggio
-number
+let listNumber = '';
+
+//** Ciclo for
+for(let i = 1; i <= 100; i++){
+    listNumber = listNumber + `${i} `;
+}
+
+console.log(listNumber);
