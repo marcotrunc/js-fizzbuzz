@@ -16,3 +16,8 @@ ul li{
     color: white;
     cursor: pointer;
 }
+
+ul li:hover{
+    transform: scale(1.2);
+    background-color: green;
+}

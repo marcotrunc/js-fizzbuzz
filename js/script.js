@@ -33,7 +33,7 @@ for(let i = 1; i <= 100; i++){
     else if(i % 3 === 0){
         listNumber += `<li class="red">Fizz</li>`;
     
-     //** Ciclo if per vedere se il numero è divisibile per 3
+     //** Ciclo if per vedere se il numero è divisibile per 5
     }else if (i % 5 === 0){
         listNumber += `<li class="blue">Buzz</li>`;
         
